@@ -1,0 +1,57 @@
+Chapter 1 and 2 Guide
+
+Jesse Hulse
+
+Compare and contrast data, databases, database (management) systems and information systems.
+
+Data: "facts that an be recorded and that have implicit meaning".
+
+Database: a collection of related facts with 3 implicit properties
+	1. Represents some aspect of the real world.
+	2. a logically coherent collection of data with some inherent meaning.
+	3. designed, built, and populated with data for a specific purpose.
+
+database (management) systems: "is a computerized system that enables users to create and maintain data"
+
+Compare and contrast database systems with the following, using the main characteristics of the database 
+approach in your discussion.
+data structures and algorithms
+1. Contrained to only the predefined data structures of the program while a DB can "access divers databases by 
+	extracting the database definitions from the catalog and using these definitions"
+2. operations are defined in datastructures and algorithms while it is not in a DB system.
+
+traditional file systems
+1. "self describing nature of a databse system" (the DB describes the data)
+2. In a traditional file system, files are only avalible to the program that runs it. A DB has program-data independence. 
+3. Sharing data can be done with a DBMS
+4. "support of multiple views", different users can access it at the same time
+5. data abstraction
+Identify the stakeholders of database systems.
+database admins, database designers, end users (people whose jobs require access to the database). 
+Naive or parametric end users (those who use predefined transactions to interact with a DB).
+Sophisticated end users (those use implement there own system to access the DB)
+Standalone users (personal DBs using ready-made packages)
+software engineers,
+
+Chapter 2
+
+Explain the significance of the categories of data models. Which type of model is displayed in Figure 2.1?
+The type of model dictates how the data is organized and how a user interacts with the data. The relational model.
+
+Explain the structure and significance of the three-schema architecture.
+1. Internal level: the internal schema that describes the physical storage structure of the DB.
+2. The conceptual level: the conceptual schema desccribes the DB to a community of users.
+3. External or view level: external schema shows the relevant data to the user and hides the rest.
+
+Most DB systmes use these three levels in some way.
+
+Explain the tiers used in a typical web-based information systeme
+1. The client (user interface): GUI, Web interfaces
+2. Application or web Server(application rules): the application programs, web pages
+3. The database server (data access)
+
+
+
+
+
+
