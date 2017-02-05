@@ -1,0 +1,59 @@
+Work through the following materials this week, making sure that you can do the given activities. This unit is a more extended treatment of the material on the relational model covered in CS 262.
+
+Chapter 3 (focus primarily on Sections 3.1-3.2)
+
+Who invented the relational data model? When and where did they do their work?
+It was first described by E.F. Codd in 1969. He worked at IBM
+
+Explain the following terms: relation, attribute, domain, n-tuple, NULL value, keys (primary, foreign, candidate, super), referenced and referencing records.
+Entity: a thing or object that exists outside the DB
+Attributes: the particular properties that descibe it (the different columns describing the entity).
+NULL value: not applicable or unknown, not known
+Relation: is a set of n-tuples ( a set of rows).
+n-tuple: is an ordered list of n values t = < v1, v2,..., v_n> where each v_i is an element of an attribute that is specified (one instance or row).
+Domain: the set of valid values for an attribute or tuple/relation
+keys:
+	primary: uniquely identifies each entry in the table
+	foreign: a field in one table that uniquely identifies another field in a different table
+	canidate: is a column, or set of columns, in a table that can uniquely identify any database record without referring to any other data
+	super: is a combination of columns that uniquely identifies any row within a table
+referenced record: a column that is used to reference/identity a records in a table
+
+
+Are tuples in a relation ordered? In math, tuples are ordered, not in the relational model.
+How about attribute values in a tuple? Explain why or why not. No, one can refer to a column by its name, not by its index.
+	The relational model requires there to be no significance to any ordering of the attributes of a relation.
+
+Can attributes have multiple values in a single n-tuple? Why or why not? No they cannot. Each attribute in each row has
+	exactly one value. One field cannot simultaneously hold more than one value. 
+
+Chapter 4 (focus primarily on Sections 4.1-4.2 & 4.4)
+
+Create tables with specified constraints.
+
+CREATE TABLE table_name
+(
+column_name1 data_type(size) constraint_name,
+column_name2 data_type(size) NOT NULL,
+column_name3 data_type(size) PRIMARY KEY,
+....
+);
+
+contraints:
+NOT NULL - Indicates that a column cannot store NULL value
+UNIQUE - Ensures that each row for a column must have a unique value
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Ensures that a column (or combination of two or more columns) have a unique identity which helps to find a particular record in a table more easily and quickly
+FOREIGN KEY - Ensure the referential integrity of the data in one table to match values in another table
+CHECK - Ensures that the value in a column meets a specific condition
+DEFAULT - Specifies a default value for a column
+
+
+Use the DML commands: INSERT, DELETE and UPDATE.
+INSERT INTO table_name (column1,column2,column3,...);
+
+UPDATE table_name
+	SET columnA='Alfred Schmidt', columnB='Frankfurt'
+	WHERE ColumnC=1;
+
+DELETE FROM table_name WHERE some_column=some_value;
+Understand the ON DELETE actions: SET NULL, CASCADE.
