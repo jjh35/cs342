@@ -1,0 +1,83 @@
+Schema:
+
+COLLEGES
+College_id, College_name
+
+COURSES
+Course_id, College_id, lab_required
+
+SECTION
+Section_id, Course_id, College_id, Full, Professor, Days_of_week, Start_time, End_start, Building, credits
+
+USER
+User_id, name, College_id
+
+Schedule
+User_id, Course_id, Section_id
+
+
+
+What types of additional information and constraints would you like to represent in the schema?
+It would be nice to make sure a class schedule is valid (no classes overlapping in time). It 
+also might be a good idea to keep track of how many credits a schedule contains.
+
+
+Think of serveral users of your database, and design a view for each.
+
+Student View
+A student can see their schedule under their name
+Lisa Jones
+Classes: 
+CS108 With VanderLinden, MWF from 11:30AM to 12:30PM at SB263. Section A, 3 credits
+ECON104 With Smith, MWF from 2:30PM to 3:30PM at NH108. Section A, 3 credits
+
+Professor View
+A professor can see all classes they are teaching.
+Professor VanderLinden
+CS108, MWF from 11:30AM to 12:30PM at SB263. Section A, 3 credits
+CS262, MWF from 2:30PM to 3:30PM at SB263. Section A, 3 credits
+
+Search View
+A view of all class from a certain department.
+CS108, MWF from 11:30AM to 12:30PM at SB263. Section A, 3 credits
+CS262, MWF from 2:30PM to 3:30PM at SB263. Section A, 3 credits
+CS332, MWF from 8:00AM to 9:00AM at NH223. Section A, 3 credits
+
+
+Sample data
+
+COLLEGES
+College_id     College_name
+Calvin         Calvin College
+MSU            Michigan State University
+Albion         Albion College
+
+
+COURSES
+Course_id      College_id     lab_required
+CS108          Calvin	      1
+MATH351        Calvin         0
+SPAN101        MSU            0
+ECON104        ALBION         0
+
+SECTION
+Section_id  Course_id  College_id  Full  Professor    Days_of_week  Start_time  End_start  Building   Credits
+A           CS108      Calvin      1     VanderLinden  MWF           11:30AM	12:30PM    SB263      3
+B           CS108      Calvin      0     Adams        MWF           1:30PM	2:30PM     SB263      3
+A           ECON104    Calvin      0     Smith        MWF           2:30PM      3:30PM     NH108      3
+A           Math351    Albion      0     Jones	      MWThF         9:00AM      10:00PM    WestH23    4
+E           SPAN101    MSU         1     Doe          TTh           8:00AM	9:30AM     EastH209   3
+
+USER
+User_id    Name        College_id
+1          John Doe    MSU
+2          Lisa Jones  Calvin
+3          Erin Smith  Albion
+
+
+SCHEDULE
+User_id  Course_id   Section_id
+2        CS108       B
+2        ECON108     A
+3        Math351     A
+1        SPAN101     E

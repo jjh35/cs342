@@ -1,0 +1,12 @@
+Jesse Hulse, Homework 1
+Exercise 1.14
+a. The Major collum in the Student table needs to be changed.
+The Department and the Course_number columns in the COURSE table would need to be updated. 
+The Course_number colunm in the SECTION table would need to be updated.
+Both the Course_number and Preerquisite_number would need to be updated in the PREREQUISITE table.
+b.In the COURSE table, one could drop the department column because the department information is clear in the 
+course_number column. If one made the Course_number the primary key in the COURSE table and
+made the Course_number columns in the SECTION and PREREQUISITE tables be forign keys, then if one uses
+ON UPDATE CASCADE when creating the SECTION and PREREQUISITE tables, these columns will be updated when 
+the Course_number is updated in the COURSE table.
+C. the same solution as above applies for only changing one field.
