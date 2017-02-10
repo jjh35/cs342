@@ -1,0 +1,4 @@
+I want to build a database of soccer players. It will have a different table for each major European league. I would hope
+to build a web scraper to fill the Database. The user interface will allow one to generate facts and statistics about
+the different players and teams. Ultimately, I would like it to generate stats that will help me create my fantasy soccer
+teams, but this would take a lot of work to build the web scraper and write methods to generate the statistics.
