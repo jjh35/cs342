@@ -1,0 +1,7 @@
+Jesse Hulse, hw2
+
+2. Exercise 5.20 
+	a. If CIT wanted to replace surrogates student ID numbers with a more natural number, then a student's full name would be a natural first
+	suggestion. But names are not always unique, so if two students had the same name, there would be problems.  A completely natural 
+	identifier that is unqiue for each and every student that might attend Calvin will be extremley difficult to find. So, surrogate keys
+	are a solution that is easy to impliment and always gurantees uniqueness. 
