@@ -1,10 +1,28 @@
---Jesse Hulse lab02 exercise 2.4
+--Jesse Hulse, lab02, Exercise 2.3 
+
+--Can you modify the movies database to support the enumerated status type using the relational 
+--model itself rather than hard-coding the values in a CHECK constraint?
+--Yes, just add a table called PERFORMER_STATUS with the status names and reference this table instead 
+--of hard-coding the values. The value of this are: 1. if someone wants to change the name of a status, then
+--they just need to change  the the value in the table instead of changing all the hard coded values. Also, using 
+-- a seperate table will cutdown on repeated data. 
+--Disadvantages: 1. One will have to use a join if they want the name of the status instead of the numeric id.
+--2. a numeric key may be hard to remember. In this case it may be easier to not use a numeric key and just use
+--the string as the key, but then one loses the advantage of easy updating. 
+
 
 -- Drop current database
 DROP TABLE Casting;
 DROP TABLE Movie;
 DROP TABLE Performer;
-DROP SEQUENCE movie_id_sequence;
+DROP TABLE PERFORMER_STATUS;
+
+
+CREATE TABLE PERFORMER_STATUS(
+Id integer,
+casting_status varchar(6),
+PRIMARY KEY(Id)
+);
 
 -- Create database schema
 CREATE TABLE Movie (
@@ -16,7 +34,6 @@ CREATE TABLE Movie (
 	CHECK (year > 1900)
 	);
 
-
 CREATE TABLE Performer (
 	id integer,
 	name varchar(35),
@@ -26,41 +43,28 @@ CREATE TABLE Performer (
 CREATE TABLE Casting (
 	movieId integer,
 	performerId integer,
-	status varchar(6),
+	casting_status integer,
 	FOREIGN KEY (movieId) REFERENCES Movie(Id) ON DELETE CASCADE,
 	FOREIGN KEY (performerId) REFERENCES Performer(Id) ON DELETE SET NULL,
-	CHECK (status in ('star', 'costar', 'extra'))
+	FOREIGN KEY (casting_status) REFERENCES PERFORMER_STATUS(Id) ON DELETE SET NULL
 	);
 
---create the sequence to index the movie table
-CREATE SEQUENCE movie_id_sequence START WITH 1;
 
-INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Star Wars',1977,8.9);
-INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Blade Runner',1982,8.6);
-INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Jurassic Park',1995,7.6);
+	-- Load sample data
+INSERT INTO PERFORMER_STATUS VALUES(1,'star');
+INSERT INTO PERFORMER_STATUS VALUES(2,'costar');
+INSERT INTO PERFORMER_STATUS VALUES(3,'extra');
+
+INSERT INTO Movie VALUES (1,'Star Wars',1977,8.9);
+INSERT INTO Movie VALUES (2,'Blade Runner',1982,8.6);
 
 INSERT INTO Performer VALUES (1,'Harrison Ford');
 INSERT INTO Performer VALUES (2,'Rutger Hauer');
 INSERT INTO Performer VALUES (3,'The Mighty Chewbacca');
 INSERT INTO Performer VALUES (4,'Rachael');
 
-INSERT INTO Casting VALUES (1,1,'star');
-INSERT INTO Casting VALUES (1,3,'extra');
-INSERT INTO Casting VALUES (2,1,'star');
-INSERT INTO Casting VALUES (2,2,'costar');
-INSERT INTO Casting VALUES (2,4,'costar');
-
---a: Would you need an additional sequence for the performer relation primary key values? Why or why not?
--- It would not be required to create a new sequence. One could use the movie_id_sequqnce.CURRVAL as folows
---CREATE SEQUENCE movie_id_sequence START WITH 1;
---INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Star Wars',1977,8.9);
---INSERT INTO Performer VALUES (movie_id_sequence.CURRVAL,'Harrison Ford');
---INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Blade Runner',1982,8.6);
---INSERT INTO Performer VALUES (movie_id_sequence.CURRVAL,'Rutger Hauer');
---INSERT INTO Movie VALUES (movie_id_sequence.NEXTVAL,'Jurassic Park',1995,7.6);
---INSERT INTO Performer VALUES (movie_id_sequence.CURRVAL,'The Mighty Chewbacca');
---INSERT INTO Performer VALUES (movie_id_sequence.NEXTVAL,'Rachael');
-
---b:Do you see any problems with using sequences in a DDL command file to construct the full movies database?
---One disadvanage is that it might take longer for the DDL command file to execute because of the additional
---overhead of calculating the sequence's value.
+INSERT INTO Casting VALUES (1,1,1);
+INSERT INTO Casting VALUES (1,3,3);
+INSERT INTO Casting VALUES (2,1,1);
+INSERT INTO Casting VALUES (2,2,2);
+INSERT INTO Casting VALUES (2,4,2);
