@@ -1,0 +1,25 @@
+Jesse Hulse
+homework 3
+1.
+a.Based on what you see in the diagram, explain the difference between flights, flight legs, and leg instances. 
+  Please give a short explanatory paragraph.
+   
+   A flight represents a trip made from one airport to another. For example, one can book a flight from Miami to New York. There can
+   be many different airplanes that make the same flight on one day. One flight may have many different legs. A leg is a nonstop
+   portion of a flight. I.e. a flight from O'hare to Houston that stops at St. Louis to switch plans contains two legs. 
+   So, the Flight_Leg table may multiple legs of one flight.  Thus a series of legs (maybe only one) which each have an arrival and 
+   departure airport make up a flight.  Thus a flight is a description of a path of travel from a departure airport to a arrival airport.
+   A Leg_Instance is is a particular instance of a Leg on a specific day. So many people may book a flight that is made up of legs, but
+   the Leg_Instance relates the information about the date and date of the particualr instance of a flight.
+
+
+b. The names of some of the attributes in this diagram are underlined with dotted lines. You’ll note that this notation 
+   is not explained in the Figure 3.14 cheatsheet. What does it mean?
+   An attribute that is underlined with a dotted line means that this attribute may have multiple values for one entity.
+   So a new table may be needed.
+
+c. You’ll note that the “SEAT” entity has a total participation in the “RESERVATION” relationship (i.e., we would write 
+   the cardinality constraint {1,*} on the “LEG_INSTANCE” side of the relationship). Why do you think the database modelers did it this way?
+   A reservation is based on a specific instance of a flight leg. It would not make sense to have a reservations or No_of_avail_seats 
+   based on a leg, because a leg does not hold information about a specific leg instance.  
+   
