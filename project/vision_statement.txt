@@ -1,4 +1,9 @@
 I want to build a database of soccer players. It will have a different table for each major European league. I would hope
 to build a web scraper to fill the Database. The user interface will allow one to generate facts and statistics about
-the different players and teams. Ultimately, I would like it to generate stats that will help me create my fantasy soccer
+the different players and teams. Ultimately,it will be able to create stats that will help me create my fantasy soccer
 teams, but this would take a lot of work to build the web scraper and write methods to generate the statistics.
+
+This database will allow users to build teams based on player position, and will let users create mock leagues to compete in.
+The database will keep track of matchups and scores. This setup is different than current fantasy soccer websites because
+my database allows for players to be picked from different leagues accross the world.  I will also allow user to trade 
+players, which current fanstasy soccer websites do not allow. 
