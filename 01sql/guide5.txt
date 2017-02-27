@@ -1,0 +1,39 @@
+Work through the following materials writing one sample query for each mechanism. Use this modified version of the movies database as the basis for your queries.
+
+Basic SQL (Section 6.3) — Review basic SQL as needed, then write sample queries that:
+
+Use one or more tuple variables (Section 6.3.2).
+Select P.firstName, S.LastName 
+From  Performer AS P, Performer As S
+Where P.firstName = S.lastName; 
+
+Use one or more of the set operations, e.g., UNION, EXCEPT, INTERSECT (Section 6.3.4).
+SELECT  firstName, LastName
+     FROM Performer
+     Where firstName = "John"
+EXCEPT
+     SELECT  LastName
+     FROM Perfromer
+     Where lastName = "Smith;
+
+
+Advanced SQL (Sections 7.1.1–7.1.5) — This will include more new material; write sample queries that:
+
+Select based on a NULL field value (Section 7.1.1).
+SELECT LastName
+     FROM Performer
+     Where firstName IS NULL;
+
+Implement a nested sub-query, using [NOT] EXISTS, IN, ANY or ALL (Sections 7.1.2–7.1.4).
+SELECT firstName, LastName
+From Performe 
+Where id IN
+	(Select performerID
+	From Castring
+	Where status = 'star');
+
+Implement a correlated sub-query (Section 7.1.3).
+
+SELECT M.title, P.firstName, P.lastName
+From Performer as P, Movie as M
+Where P.firstName = M.title OR P.lastName = M.title;
