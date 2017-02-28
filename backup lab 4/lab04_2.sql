@@ -43,15 +43,3 @@ WHERE pt.personName = pv.personName;
 --other. If someone wants to know when someone visits, then they look the PersonVisit table. If they want to look at what teams a person is on
 --they check the person visit table. So in this context, there is no need to have the combined view. 
 
---d (homework)
-drop table TeamVisit;
-
-create table TeamVisit(
-	personName varchar(10),
-	teamName varchar(10),
-	PersonVisit varchar(10)
-	);
-
-INSERT INTO teamVisit SELECT PersonTeam.personName, PersonTeam.teamName, PersonVisit.personVisit FROM PersonTeam, PersonVisit;
-
-select * from TeamVisit;

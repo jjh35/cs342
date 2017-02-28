@@ -1,0 +1,49 @@
+Jesse Hulse, Homework 4
+
+Exercise 14.31
+A.
+The relation is in 1st nornmal form because the rows are atomic values, not comma seperated lists
+Proof: I will show that the relation is not in BCNF 
+Step 1: Identify functional dependencies and show that the LHS is a superkey.
+As the book states: Book_title -> Publisher, Book_type
+Book_type -> List_price, and Author_name -> Author_affil
+Unfortunately, Book_type is not a canidate key because many books can of the same type can have a the same List_price.
+Thus this relation is not in BCNF.
+
+I will show that this relation is not in 4NF. Since 4NF is a subset of BCNF, then this relation is not part of 4NF
+because it is not part of BCNF
+B. Since the relation is not in BCNF, then breaking the relation into multiple relations will help to clean up the schema.
+   We can have the following 3 relations
+   1. Book(Book_title, Publisher, Book_Type_ID, Author_name)
+      Now, the only functional dependancey is Book_title, Author_name -> Publisher, Book_Type. Since Book_title, Auhor_name is a canidate key
+      then this relation is now in BCNF. Book_Type_ID and Author_name are foreign keys to the following 2 tables.
+   2. Book_Type(ID, List_price)
+      The only functional Dependancy is ID -> List_price and ID is a canidate key, so we are in BCNF
+   3. Author(Author_name, Author_affil)
+       Author_name->author_afil  is the only FD, and Author_name is a canidate key, so we are in BCNF
+
+
+Exercise 14.35 
+Book_name, edition -> year, but not vice-versa. (year ->> Book_name, edition)
+The title and coauthor names stay the same from edition to edition.
+A. (Author, Edition) is a canidate key
+   (Author, Copyright_Year) is a canidate
+B. Since different tuples that have the same Book_name and Author will be just different editions of the same book, then it multi-value determines the edtion and year.
+   (We are told to assume that The title and coauthor names stay the same from edition to edition)
+   Book, Edition, and Year will functionally determine Author, so the MVD {Book} -> {Author} | {Edition, Year}
+C. The two relations we would want would be:
+   Book(Book_name, Author, Edition);
+   Edition(Edition, Year); 
+
+   The Book relations in in BCNF as shown (all values are atomic, so we are in 1NF)
+   1. The only functional dependancy is the trivial one
+   2. Thus all three columns are the canidate key
+   3. The trivial FD will have the canidate key on the LFS
+   Thus Book is in BCNF. There is no multivalued FDs other than the trivial one, so it is in 4NF
+
+   The Edition relation in in 1NF (all values are atomic) and in BCNF as shown
+   1. Edition -> year 
+   2. Edition is a canidate key.
+   3. The LHS of the functional Dependency is the canidate key, so we are in BCNF
+    There is no multivalued FDs other than the trivial one, so it is in 4NF
+   
