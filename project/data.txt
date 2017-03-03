@@ -1,0 +1,65 @@
+
+
+For my sample data, I retrieved information from my own knowledge of the sport, as well as fantasy.premierleague.com for specific goal and assist counts.
+Not all the goal, assist, and clean sheet data is factual. I plan to build a web scraper that scrapes from http://api.football-data.org. I am unsure if
+I will be able to find a website that holds data for every league I hope to include, but at least I will include the English Premier league data.
+
+
+I will use 4th normal form for this project.  I will use 4th normal form because it will dictate that all the tables hold to BCNF. BCNF produces
+cleaner tables and relations that lower normal forms. I will also try to avoid any multi-valued dependancies for simplicity. Since FDs are a subset of
+multi-valued dependancies, my DB will be in 4NF if it is in BCNF (I am avoiding MVDs) 
+I will show that each table is in BCNF
+
+1. Pro_League
+  A. ID -> name
+  B. ID is the only Canidate key
+  C. ID is on the LHS of a FD and is a Canidate key
+  Thus we are in BCNF
+
+2. Pro_Team
+   A. ID -> name, league
+   B. ID is the only canidate key
+   C. ID is on the LHS of a FD and is a Canidate key
+   Thus Pro_Team is in BCNF
+
+3. Player
+  A. ID -> name, pro_team, position, goals, assists, clean_sheets
+  B. ID in the only canidate key
+  C. ID is on the LHS of a FD and is a Canidate key
+  Thus Player is in BCNF
+
+4. User_Profile
+  A. ID -> name
+  B. ID is the only canidate key
+  C. ID is on the LHS of a FD and is a Canidate key
+
+5. Fantasy_League
+  A. ID-> game_count, name
+  B. ID is the only canidate kye
+  C.ID is on the LHS of a FD and is a Canidate key
+Thus Fantasy_League is in BCNF
+
+6. User_Team
+ A. user_id, name -> ID, fantasy_league, record
+    ID -> user_id, name, fantasy_league, record
+    user_id, fantasy_league -> ID, name, record
+ B. (ID), (user_id, name), (user_id, fantasy_league)
+ C. (user_id, name) is on the LHS of a FD and is a canidate key, so is (ID) and (user_id, fantasy_league)
+ Thus User_team is in BCNF
+
+7. Team_Player
+ A. Since the only two columns create the primary key, then we are in the trivial case so only the trivial FD exists
+ B. (team_ID, Player_ID)
+ C. There only exists the trival FD, so we are in BCNF
+
+8. Match_Up
+A. (team1_ID, team2_ID, week_number) -> team1_score, team2_score
+B. (team1_ID, team2_ID, week_number) is the only canidate key
+C. (team1_ID, team2_ID, week_number)  is on the LHS of a FD and is a canidate key
+
+9. Player_score
+A. player_ID, week, -> score
+B. (player_ID, week) is a canidate key
+C. (player_ID, week) is on the LHS of a FD and is a canidate key, so Player_score is in BCNF
+
+None of the table contain any multi-valued dependancies, so we are in 4NF
