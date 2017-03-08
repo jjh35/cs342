@@ -1,0 +1,20 @@
+As in the last unit, work through the following materials writing one sample query for each mechanism using the modified version of the movies database (see code/06sql/guide06.sql).
+
+Advanced SQL (Section 7.1, continued) — Write sample queries that:
+
+Implement an inner join (Section 7.1.6).
+Select performerId
+From (Casting JOIN MOVIE ON id = movie)
+WHERE Dname = 'star';
+
+Implement an outer join (Section 7.1.6).
+select P.firstName AS Performer_name, S.Lname AS Supervisor_name
+	From (Performer AS P LEFT OUTER JOIN Casting AS C ON P.id = C.performerId);
+Use an aggregate function (Section 7.1.7).
+select SUM(year), MAX(year)
+	From Movie;
+
+Use grouping (Section 7.1.8).
+Select title, score
+	From Movie 
+	Group BY year;
