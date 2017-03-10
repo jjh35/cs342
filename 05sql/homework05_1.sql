@@ -16,7 +16,8 @@ select distinct e1.employee_id || ' ' || e1.first_name || ' ' || e1.last_name ||
 	where manager.employee_id = e1.manager_id
 	AND manager.hire_date > e1.hire_date
 	AND jh.employee_id = e1.employee_id
-	AND jh.department_id = manager.department_id;
+	AND NOT EXISTS (Select * from job_history job_h where 
+		e1.employee_id = job_h.employee_id AND job_h.department_id <> manager.department_id);
  
 --C
 --join query
