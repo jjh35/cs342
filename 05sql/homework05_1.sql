@@ -27,6 +27,6 @@ Select Distinct c.country_name
 Select Distinct country_name 
 	from (select * from countries c, locations l, departments d  where d.location_id = l.location_id AND l.country_id = c.country_id); 
 --the join query is better because there is no need to have a separate select statement when a simple join will do the same thing.
-
+-- plus the second query requires to select statements, so this might require more computation time
 
 --select * From(select distinct e.manager_id from departments d, job_history jh, employees e where jh.department_id = d.department_id AND d.manager_id = e.manager_id ); 
