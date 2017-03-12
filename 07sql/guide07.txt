@@ -1,0 +1,48 @@
+As in the last unit, work through the following materials writing one sample query for each mechanism using the modified version of the movies database (see code/07sql/guide07.sql).
+
+Views (Section 7.3, for Monday)
+
+Write a simple view specification. For details on Oracle views, see Managing Views.
+CREATE VIEW MOVIE_PERFORMER
+	AS SELECT title, firstName, lastName
+	FROM Movie, Performer
+	Where Movie.title = Performer.firstName OR Movie.title = Performer.lastName
+
+Define the following terms (in the comments of your SQL command file).
+
+Base Tables
+Tables that actually exist in the schema and are stored in physical memory.
+
+Join Views
+It is a view that comes from multiple other tables.
+
+Updateable Join Views
+It is a join view where UPDATE , INSERT , and DELETE are permitted
+
+Key-Preserved Tables
+This means that one can create a view and keep the integretity of the keys from the base tables in the new view.
+
+Views that are implemented via query modification vs materialization. (For details on Oracle materialization, see Materialized View Concepts and Architecture, focusing on the “What is a Materialized View?” and “Why Use Materialized Views” sections.)
+ View that is materialized means that it is updated (refreshed) by refering to a master table or view that is seperate from the materialized view.
+ This is different from a table that is updated through query modification.
+
+Formal languages for the relational model (Chapter 8, for Wednesday)
+
+Relational Algebra (read Sections 8.1–8.3 & 8.5) — Write a simple query on the movies database using SELECT (σcondition), PROJECT (πfieldlist), RENAME (ρnewName) and JOIN (⋈condition) (see example queries 1 & 2 in Section 8.5).
+CastingStars <- σcasting='start'(Casting)
+  <- (CastingStars π firstName, lastName)
+  Performer ρ StarPerformer
+   ⋈ Performer.ID U Casting.PerformerID
+
+Tuple Relational Calculus (read Sections 8.6.1–8.6.3 & 8.6.8) — Write a simple query on the movies database using the tuple relational calculus queries (see example queries 0 & 1 in Section 8.6.4).
+{p.firstName, p.lastName | Performer(p) AND (∃c)(Casting(c) AND c.performerID = p.id)}
+Define the following terms):
+
+Existential and universal quantifiers (see Section 8.6.3).
+(∀x) means for all x in the considered domain, some property holds
+∃(x) means that there exists at least one x sush that some property holds
+
+safe expressions (see Section 8.6.8).
+A safe expression is one in relational calculus that is guaranteed to return a finitie number of results.
+
+Write your solutions either in ASCII (e.g., SELECT_condition), Unicode (e.g., σcondition) or using hand-writing.
