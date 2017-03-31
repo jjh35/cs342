@@ -9,13 +9,13 @@ Explain the following terms: relation, attribute, domain, n-tuple, NULL value, k
 Entity: a thing or object that exists outside the DB
 Attributes: the particular properties that descibe it (the different columns describing the entity).
 NULL value: not applicable or unknown, not known
-Relation: is a set of n-tuples ( a set of rows).
+Relation: is a set of n-tuples ( a set of rows), (basically a table).
 n-tuple: is an ordered list of n values t = < v1, v2,..., v_n> where each v_i is an element of an attribute that is specified (one instance or row).
 Domain: the set of valid values for an attribute or tuple/relation
 keys:
 	primary: uniquely identifies each entry in the table
-	foreign: a field in one table that uniquely identifies another field in a different table
-	canidate: is a column, or set of columns, in a table that can uniquely identify any database record without referring to any other data
+	foreign: a field in one table that uniquely identifies another field in a different table, a primary key that references 
+	candidate: is a column, or set of columns, in a table that can uniquely identify any database record without referring to any other data
 	super: is a combination of columns that uniquely identifies any row within a table
 referenced record: a column that is used to reference/identity a records in a table
 

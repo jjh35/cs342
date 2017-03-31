@@ -5,5 +5,6 @@ drop table User_team;
 drop table Fantasy_League;
 drop table User_Profile;
 drop table Player;
+drop table position;
 drop table Pro_team;
 drop table Pro_League;

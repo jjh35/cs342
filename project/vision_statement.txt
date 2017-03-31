@@ -6,4 +6,5 @@ teams, but this would take a lot of work to build the web scraper and write meth
 This database will allow users to build teams based on player position, and will let users create mock leagues to compete in.
 The database will keep track of matchups and scores. This setup is different than current fantasy soccer websites because
 my database allows for players to be picked from different leagues accross the world.  I will also allow user to trade 
-players, which current fanstasy soccer websites do not allow. 
+players, which current fanstasy soccer websites do not allow. Stakeholders will be any soccer fan who wants to
+play fantasy soccer.

@@ -1,0 +1,78 @@
+Work through the following materials this week, making sure that you can do the given activities.
+
+Read Sections 10.1, 10.4.1 & 26.1.1–2:
+
+Name the three basic approaches to database programming.
+1. Embedding database commads in a general-purpose programming language. 
+2. Using a library of databse functions or classes. 
+3 Designing a brand new language. 
+
+Explain the concepts of:
+
+impedance mismatch:
+"is the term used to refer to the problems that occure because of diffrences between the database model and the programming language model."
+
+stored procedures:"database program modeulse-procedures of functions-that are stored and executed by the DBMS at the ddatabase server"
+
+triggers
+Events can automatically trigger actions in the DBMS are called triggers.
+
+Read Server-Side Programming: PL/SQL and Java.. Focus on server-side programming, PL/SQL and triggers; skip the section on “Overview of Java in Oracle Database”.
+
+Compare and contrast:
+
+procedural vs non-procedural languages.
+"In a nonprocedural language such as SQL, the set of data to be operated on is specified, but not the operations to be performed or the manner in which 
+they are to be carried out. In a procedural language program, most statement execution depends on previous or subsequent statements and on control structures, 
+such as loops or conditional branches, that are not available in SQL."
+
+A non-procedural language allows one to specify the specific operation, but the implementation of these opereations are not specified by the programmer.
+In a procedural language, one must program the control structures that implement the operation.
+
+Both allow a programmer to program an operation and retrieve data.
+
+client-side vs server-side database programming.
+
+Client-side programming has embeded SQL written in the specific language.
+
+Server-Side programming has the application call subprograms that query the DBMS on the server.
+
+
+Explain why one would want to do server-side programming using PL/SQL.
+"The principal benefit of server-side programming is that functionality built into the database can be deployed anywhere. The database and not the 
+application determines the best way to perform tasks on a given operating system. Also, subprograms increase scalability by centralizing application 
+processing on the server, enabling clients to reuse code. Because subprogram calls are quick and efficient, a single call can start a compute-intensive 
+stored subprogram, reducing network traffic."
+
+For each of the following code segments, identify the type of the database object and explain what it does.
+
+CREATE PROCEDURE limited_count (limit IN integer) AS
+BEGIN
+  FOR i IN 1..limit LOOP
+      dbms_output.put_line(i);
+  END LOOP;
+END;
+
+Non-Schema object.
+This simply prints integers up to the limit.
+
+ 
+
+BEGIN
+  dbms_output.put_line('Hello, PL/SQL!');
+END;
+
+Non_schema object.
+This prints the string 'Hello, PL/SQL!' to the output
+ 
+
+CREATE TRIGGER log_trigger
+  BEFORE INSERT OR UPDATE OF lastName ON Person
+  FOR each row
+BEGIN
+  dbms_output.put_line('Hello, name change!');
+END;
+
+Schema Object
+Before the lastName of a person in the person table is updated or a new one is inserted, a message 
+will be printed out saying 'Hello, name change!'.
