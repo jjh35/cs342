@@ -124,9 +124,9 @@ end extraFun;
 /
 
 
-execute findActorNumber(1);
+execute findActorNumber(22591);
 
 
 select actorID as actor, BaconNumber as baconNumber from baconTable order by baconNumber desc;
 
---select baconNumber, count(*) from baconTable group by baconNumber order by baconNumber asc;
+select baconNumber, count(*) from baconTable group by baconNumber order by baconNumber asc;
