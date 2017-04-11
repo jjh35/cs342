@@ -1,5 +1,0 @@
-sqlplus sys as sysdba
-
-C:\app\jjh35\product\12.1.0\dbhome_1\NETWORK\ADMIN\SAMPLE
-
-http://kb.tableau.com/articles/howto/setting-an-oracle-connection-to-use-tnsnames-ora-or-ldap-ora
