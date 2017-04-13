@@ -1,0 +1,17 @@
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+       8.5                                                                      
+
+SQL> @script3_2
+
+PL/SQL procedure successfully completed.
+
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+       9.5                                                                      
+
+SQL> spool off
