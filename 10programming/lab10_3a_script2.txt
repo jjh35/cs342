@@ -15,3 +15,17 @@ SQL> select rank from movie where id = 238071;
        9.5                                                                      
 
 SQL> spool off
+
+
+the script3_2 file is as follows:
+begin
+
+insert into storage2 select id, rank from movie where id = 238071;
+
+update storage2 set value = value + 0.5 where id = 238071;
+
+update movie set rank = (select value from storage2 where id = 238071 ) where id = 238071;
+commit;
+
+end;
+/
