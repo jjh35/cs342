@@ -1,0 +1,32 @@
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+       8.5                                                                      
+
+SQL> @script3_1
+
+PL/SQL procedure successfully completed.
+
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+       9.5                                                                      
+
+SQL> spool off
+
+
+the Script3_1 sql file is as follows:
+
+begin
+
+insert into storage select id, rank from movie where id = 238071;
+
+update storage set value = value + 0.5 where id = 238071;
+
+update movie set rank = (select value from storage where id = 238071 ) where id = 238071;
+commit;
+
+end;
+/
