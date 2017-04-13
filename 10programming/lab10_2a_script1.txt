@@ -1,0 +1,28 @@
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+         9                                                                      
+
+SQL> insert into storage select id, rank from movie where id = 238071;
+
+1 row created.
+
+Commit complete.
+SQL> update storage set value = value + 0.5 where id = 238071;
+
+1 row updated.
+
+Commit complete.
+SQL> update movie set rank = (select value from storage where id = 238071 ) where id = 238071;
+
+1 row updated.
+
+Commit complete.
+SQL> select rank from movie where id = 238071;
+
+      RANK                                                                      
+----------                                                                      
+       9.5                                                                      
+
+SQL> spool off
