@@ -1,0 +1,8 @@
+Exercise 10.1
+a. When one session deletes/inserts/modifies a movie, the other session does not see the delete until the first session 
+   commits the work. Thus it prservers the transaction life-cycle. Thus if something a transaction is aborted or rolled back
+   before it is committed, the other other processes will not be affected. 
+b. The start-transaction (begin) and commit can implement isolation because it places a lock on the resource and
+   prevents other processes from accessing the resource. The atomicity of a series of transactions can be
+   implimented as well useing the the begin and commit commands. Durability is handled by the DBMS. Consistency is handled by the
+   DBMS as well.    
