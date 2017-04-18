@@ -1,0 +1,4 @@
+DIRECTORY=fantasy_exp_dir
+DUMPFILE=fantasyLeague.dmp
+LOGFILE=fantasyLeague.log
+TABLES=system.Pro_Team,system.Pro_League,system.position,system.Player,system.User_Profile,system.Fantasy_League,system.User_Team,system.Team_Player,system.Match_Up,system.player_Score 
