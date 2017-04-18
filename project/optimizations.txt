@@ -1,0 +1,170 @@
+SQL> select u_t.name as team, l.name as league
+	from  User_profile u_p join 
+		(User_team ut join 
+			(User_team u_t left outer join fantasy_league l on u_t.fantasy_league = l.id) 
+		on u_t.user_id = ut.id) 
+	on ut.user_id = u_p.id AND u_p.id = 1;
+
+TEAM                             LEAGUE                                         
+-------------------------------- --------------------------------               
+goal diggers                     YNWO                                           
+Messi for President              Imports                                        
+Klopp in the Kop                                                                
+
+Elapsed: 00:00:00.00
+
+Execution Plan
+----------------------------------------------------------                      
+Plan hash value: 63830753                                                       
+                                                                                
+--------------------------------------------------------------------------------
+------                                                                          
+                                                                                
+| Id  | Operation           | Name           | Rows  | Bytes | Cost (%CPU)| Time
+     |                                                                          
+                                                                                
+--------------------------------------------------------------------------------
+------                                                                          
+                                                                                
+|   0 | SELECT STATEMENT    |                |     4 |   132 |     6   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+|*  1 |  HASH JOIN OUTER    |                |     4 |   132 |     6   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+|*  2 |   HASH JOIN         |                |     4 |    88 |     4   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+|*  3 |    TABLE ACCESS FULL| USER_TEAM      |     3 |    18 |     2   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+|   4 |    TABLE ACCESS FULL| USER_TEAM      |    10 |   160 |     2   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+|   5 |   TABLE ACCESS FULL | FANTASY_LEAGUE |     4 |    44 |     2   (0)| 00:0
+0:01 |                                                                          
+                                                                                
+--------------------------------------------------------------------------------
+------                                                                          
+                                                                                
+                                                                                
+Predicate Information (identified by operation id):                             
+---------------------------------------------------                             
+                                                                                
+   1 - access("U_T"."FANTASY_LEAGUE"="L"."ID"(+))                               
+   2 - access("U_T"."USER_ID"="UT"."ID")                                        
+   3 - filter("UT"."USER_ID"=1)                                                 
+
+
+Statistics
+----------------------------------------------------------                      
+        107  recursive calls                                                    
+          0  db block gets                                                      
+        162  consistent gets                                                    
+          4  physical reads                                                     
+          0  redo size                                                          
+        723  bytes sent via SQL*Net to client                                   
+        551  bytes received via SQL*Net from client                             
+          2  SQL*Net roundtrips to/from client       
+
+
+
+
+This Query is necessary                            
+          9  sorts (memory)                                                     
+          0  sorts (disk)                                                       
+          3  rows processed                                                     
+
+SQL> spool off
+
+This query returns a list of a user's team(s) and what league(s) they are in. If any of the teams are not in a league, print out a null value for the league name.
+A user might want to check what league their various teams are in.  This query is a triple nested join, with one left outer join. The optimizer first builds
+a hash join for the User_Team table on itself. Thus, it does a full table acces twice for the user_team table. The hash join joins on where the user_id of the 
+USER_TEAM matches the ID of USER_TEAM. So this join scans the full table twice. Then the optimizer implements a hash outer join on the resulting join on the
+table generated by the self join and the fantasy_league table. It has to do a full scan of the fantasy_league table. 
+
+In order to optimize this query, I create a index on the user_team table.
+
+I first ran the anonymous block below
+
+declare
+dummy integer;
+BEGIN
+	FOR i IN 1..1000 LOOP
+		 select count(*) into dummy
+			from  User_profile u_p join 
+				(User_team ut join 
+					(User_team u_t left outer join fantasy_league l on u_t.fantasy_league = l.id) 
+				on u_t.user_id = ut.id) 
+			on ut.user_id = u_p.id AND u_p.id = 1;
+	END LOOP;
+END;
+/
+Then I create the index below.
+
+create index user_team_index on User_Team(id, user_id);
+declare
+dummy integer;
+BEGIN
+	FOR i IN 1..1000 LOOP
+		 select count(*) into dummy
+			from  User_profile u_p join 
+				(User_team ut join 
+					(User_team u_t left outer join fantasy_league l on u_t.fantasy_league = l.id) 
+				on u_t.user_id = ut.id) 
+			on ut.user_id = u_p.id AND u_p.id = 1;
+	END LOOP;
+END;
+/
+
+When I ran this file, the first anonymous block took 0.23 seconds to finish. After the index had been built, the second anonymous block (the exact same query)
+only took 0.08 seconds to finish. So the query took rougly 1/3 the time to execute with the index in place. This would be a good optimization to include, especially
+as the user_team table grows large. The execution plan for the indexed query is as follows:
+
+
+select u_t.name as team, l.name as league
+	from  User_profile u_p join 
+		(User_team ut join 
+			(User_team u_t left outer join fantasy_league l on u_t.fantasy_league = l.id) 
+		on u_t.user_id = ut.id) 
+	on ut.user_id = u_p.id AND u_p.id = 1;
+
+
+Execution Plan
+----------------------------------------------------------                      
+Plan hash value: 242441307                                                      
+                                                                                
+--------------------------------------------------------------------------------
+| Id  | Operation           | Name            | Rows  | Bytes | Cost (%CPU)| Tim
+--------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT    |                 |     4 |   132 |     4   (0)| 00:
+|*  1 |  HASH JOIN OUTER    |                 |     4 |   132 |     4   (0)| 00:
+|   2 |   NESTED LOOPS      |                 |     4 |    88 |     2   (0)| 00:
+|   3 |    TABLE ACCESS FULL| USER_TEAM       |    10 |   160 |     2   (0)| 00:
+|*  4 |    INDEX RANGE SCAN | USER_TEAM_INDEX |     1 |     6 |     0   (0)| 00:
+|   5 |   TABLE ACCESS FULL | FANTASY_LEAGUE  |     4 |    44 |     2   (0)| 00:
+--------------------------------------------------------------------------------
+                                                                                
+Predicate Information (identified by operation id):                             
+---------------------------------------------------                             
+                                                                                
+   1 - access("U_T"."FANTASY_LEAGUE"="L"."ID"(+))                               
+   4 - access("U_T"."USER_ID"="UT"."ID" AND "UT"."USER_ID"=1)                   
+
+
+Statistics
+----------------------------------------------------------                      
+          1  recursive calls                                                    
+          0  db block gets                                                      
+         10  consistent gets                                                    
+          0  physical reads                                                     
+          0  redo size                                                          
+        723  bytes sent via SQL*Net to client                                   
+        551  bytes received via SQL*Net from client                             
+          2  SQL*Net roundtrips to/from client                                  
+          0  sorts (memory)                                                     
+          0  sorts (disk)                                                       
+          3  rows processed     
+
+With the index, a index range scan replaces one of the full table accesses, resulting in a quicker query. Also, oracle chose to use a nested loop instead of
+a hash join. 
