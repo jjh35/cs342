@@ -1,0 +1,67 @@
+Truly, the relational data model is a wonderful innovation, and it would be an absolute disaster to replace it with flawed persistence technologies like XMLDBs or OODBMS. ... Relational technology essentially completely replaced network or hierarchical database technology, and there were excellent reasons why that happened. We should most certainly not be reviving either of those discredited approaches by slapping on the latest buzzwords (OO, XML, etc) as window dressing. – Gavin King, Interview with Gavin King, August, 2009
+Read Your First Cup: An Introduction to the Java EE Platform — Focus on Chapter 2, “Understanding Java Platform, Enterprise Edition”
+
+Explain the tiers discussed in the article. On which does J2EE focus? On which to the Oracle database focus?
+	The client tier consists of application clients that access a Java EE server and that are usually located on a 
+	different machine from the server. The clients make requests to the server. The server processes the requests 
+	and returns a response back to the client.
+	
+	The web tier consists of components that handle the interaction between clients and the business tier.
+	
+	The business tier consists of components that provide the business logic for an application. Business logic is code 
+	that provides functionality to a particular business domain, like the financial industry, or an e-commerce site.
+	
+	The enterprise information systems (EIS) tier consists of database servers, enterprise resource planning systems, and other legacy data sources, like mainframes. 
+
+	
+	Oracle databases focus on the Enterprise informations systems tier.
+	
+Explain the nature of a J2EE container. What sort of containers are there?
+
+	Java EE containers are the interface between the component and the lower-level functionality provided by the platform to support that component. 
+	The functionality of the container is defined by the platform and is different for each component type. There are Web containers, EJB Containers, 
+	and Application Client Containers
+
+Read The Java EE Tutorial — This tutorial provides extensive material on J2EE; focus on the sections listed here.
+
+Sections 1.7–1.8, “Java EE 7 APIs” — Explain the purpose of these technologies (only): JPA, JTA, JAX-RS*, JDBC, JAXB.
+	Java Persistence API is a collection of classes and methods to persistently store the vast amounts of data into a database.
+	The Java Transaction API (JTA), one of the Java Enterprise Edition (Java EE) APIs, enables distributed transactions 
+		to be done across multiple X/Open XA resources in a Java environment. 
+	JAX-RS is a Java programming language API designed to make it easy to develop applications that use the REST architecture.
+	JDBC API is a Java API that can access any kind of tabular data, especially data stored in a Relational Database. 
+		JDBC works with Java on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+	ava Architecture for XML Binding (JAXB) is a software framework that allows Java developers to map Java classes to XML representations. JAXB provides two main features: 
+		the ability to marshal Java objects into XML and the inverse, i.e. to unmarshal XML back into Java objects.
+	
+
+Section 5, “Packaging Applications” — Compare and contrast JARs, WARs & EARs.
+	"In software engineering, a WAR file (or Web application ARchive[1]) is a JAR file used to distribute a collection of JavaServer Pages, 
+	Java Servlets, Java classes, XML files, tag libraries, static web pages (HTML and related files) and other resources that together 
+	constitute a web application."
+	
+	"A JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and
+	resources (text, images, etc.) into one file for distribution."
+	
+	EAR (Enterprise Application aRchive) is a file format used by Java EE for packaging one or more modules into a single archive so that the deployment of the various 
+	modules onto an application server happens simultaneously and coherently. It also contains XML files called deployment descriptors which 
+	describe how to deploy the modules.
+
+Review these tutorials, on which the lab is based: Developing a Java EE Application & Creating and Running Your First RESTful Web Service.
+
+Identify the IDE we’ll use for J2EE development.
+IntelliJ IDEA 2016.3
+
+Identify the roles of the following technologies in the J2EE application: J2SE’s JDK; GlassFish.
+	Java SE is the base of java. With Java SE you can build java applications. JDK: Java development kit.
+	
+	"GlassFish is an open-source application server project started by Sun Microsystems for the Java EE platform and now sponsored by Oracle Corporation. 
+	The supported version is called Oracle GlassFish Server."
+
+
+Explain the nature of a RESTful webservice.*
+
+Use HTTP methods explicitly
+Be stateless
+Expose directory structure-like URIs
+Transfer XML, JSON, or both
