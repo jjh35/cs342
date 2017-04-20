@@ -99,7 +99,7 @@ BEGIN
 	END LOOP;
 END;
 /
-Then I create the index below.
+Then I created the index below.
 
 create index user_team_index on User_Team(id, user_id);
 declare
