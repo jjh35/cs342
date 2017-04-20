@@ -1,4 +1,4 @@
- Create the user.
+ --Create the user.
 alter session set "_ORACLE_SCRIPT"=true;
 DROP USER user1;
 CREATE USER user1
@@ -16,11 +16,40 @@ GRANT
 	UNLIMITED TABLESPACE
 	TO user1;
 
-Connect user1/Kevin;
+-- Connect user1/Kevin;
 
 --DEFINE user1=C:\OracleDB\SQLFiles
 --@&user1\load 
 @load;
+
+
+
+DROP USER dataPumpUser CASCADE;
+CREATE USER dataPumpUser
+	IDENTIFIED BY bjarne
+	QUOTA 800M ON System;
+GRANT 
+	CONNECT,
+	CREATE TABLE,
+	CREATE SESSION,
+	CREATE ANY DIRECTORY,
+	DROP ANY DIRECTORY,
+	CREATE SEQUENCE,
+	CREATE VIEW,
+	CREATE MATERIALIZED VIEW,
+	CREATE PROCEDURE,
+	CREATE TRIGGER,
+	PLUSTRACE,
+	UNLIMITED TABLESPACE	
+	TO dataPumpUser;
+
+drop directory fantasy_exp_dir;
+CREATE DIRECTORY fantasy_exp_dir AS 'C:\Users\jjh35\Documents\project';
+
+GRANT READ,WRITE ON DIRECTORY fantasy_exp_dir TO dataPumpUser;
+
+
+
 
 
 
