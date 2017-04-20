@@ -22,8 +22,6 @@ GRANT
 --@&user1\load 
 @load;
 
-
-
 DROP USER dataPumpUser CASCADE;
 CREATE USER dataPumpUser
 	IDENTIFIED BY bjarne
@@ -47,13 +45,5 @@ drop directory fantasy_exp_dir;
 CREATE DIRECTORY fantasy_exp_dir AS 'C:\Users\jjh35\Documents\project';
 
 GRANT READ,WRITE ON DIRECTORY fantasy_exp_dir TO dataPumpUser;
-
-
-
-
-
-
-
-
 
 
