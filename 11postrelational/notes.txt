@@ -1,11 +1,11 @@
 11.1
-	c. In the External Libraries, the JDK 1.8.1 has alot of standard libraryies for Java.
-	   The GlashFish4.1 is the J2EE has javax.ejb and javax.servlet, and javax.servlet.jsp
-	d. The html pages run at the web tier.
-	e. Javax.servlet
-	f. web application archive. It is a JAR file that distributes JavaServerPages, Classes, XML files,
+	c. In the External Libraries, the JDK 1.8.1 (The J2SE) has standard libraries for Java.
+	   The GlashFish4.1 is the J2EE, and it has javax.ejb and javax.servlet, and javax.servlet.jsp
+	d. The html pages are served at the web tier and viewed by the client in the client tier in their browser.
+	e. Javax.servlet. GlashFish on the local machine. Glashfish is the appliation server.
+	f. web application archive. It is a JAR file that has/distributes JavaServerPages, Classes, XML files,
 	   and tag libraries.
-	g. An exploded ware file is decompressed web application archive. Unexploded means that the WAR file
+	g. An exploded WAR file is a decompressed web application archive. Unexploded means that the WAR file
 	   has not been decompressed.
 	h.  WAR files are specifically for web apps and contain the Servlet class files, HTML, etc while 
 		EAR contains the .war and .jar files with all the compnents of the J2EE system.
