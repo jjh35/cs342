@@ -45,14 +45,11 @@ create or replace view unowned_players as
 					AND ut.name = 'goal diggers' 
 						AND up.name = 'experianced');
 	 
-
 --This select finds the average scores for unowend players.
 --This will be useful for people wanting to make transfers.
 select p.player_name, AVG(p.score)
 	from unowned_players p
 	group by p.player_name;
-	
-
 	
 --This query retrieves all match_up scores for a given week. (if a match_up has not started yet, then the scores will be null).
 --People who want to check the performance of their team will user this query.
@@ -62,7 +59,6 @@ select  m_u.team2_ID as opponent, m_u.team1_score as your_score, m_u.team2_score
 		AND m_u.team1_ID = u_t.id 
 		AND u_t.name = 'goal diggers';
 	
-
 	
 --This query returns a list of a user's teams and what league they are in. If any on the teams are not in a league, print out a null value for the league name.
 --A user might want to check what league their various teams are in.	
@@ -78,11 +74,7 @@ select u_t.name as team, l.name as league
 select u_p.name as user_profile, reference.name as reference
 from user_profile u_p left outer join user_profile reference on u_p.reference = reference.id;
 
-	
 
-	
-	
-	
 	
 
 

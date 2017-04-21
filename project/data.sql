@@ -105,14 +105,15 @@ insert into Team_Player Values(1,9);
 insert into Team_Player Values(1,10);
 insert into Team_Player Values(1,11);
 insert into Team_Player Values(1,12);
---insert into Team_Player Values(1,13);
-insert into Team_Player Values(1,23);
+insert into Team_Player Values(1,13);
+--insert into Team_Player Values(1,23);
 
 
 insert into Team_Player Values(2,9);
 insert into Team_Player Values(2,10);
 insert into Team_Player Values(2,11);
 insert into Team_Player Values(2,12);
+--not player 13
 insert into Team_Player Values(2,14);
 insert into Team_Player Values(2,15);
 insert into Team_Player Values(2,16);
@@ -124,16 +125,18 @@ insert into Team_Player Values(2,21);
 insert into Team_Player Values(2,22);
 insert into Team_Player Values(2,23);
 
+--week 1 scores
 insert into Match_Up Values(1, 2, 25, 2, 1);
-insert into Match_Up Values(1, 3, 5, 20, 1);
-insert into Match_Up Values(1, 4, 81, 20, 1);
-insert into Match_Up Values(1,5,null,null,2);
+insert into Match_Up Values(1, 3, 5, 20, 2);
+insert into Match_Up Values(1, 4, 81, 20, 3);
+insert into Match_Up Values(1,5,null,null,4);
 
-insert into Match_Up Values(2, 3, 20, 20, 1);
-insert into Match_Up Values(3, 4, 20, 20, 1);
-insert into Match_Up Values(4, 5, 20, 20, 1);
-insert into Match_Up Values(7, 8, 20, 20, 1);
-insert into Match_Up Values(8, 6, 20, 20, 1);
+--week 2 scores
+insert into Match_Up Values(2, 3, 20, 20, 2);
+insert into Match_Up Values(3, 4, 20, 20, 4);
+insert into Match_Up Values(4, 5, 20, 20, 5);
+insert into Match_Up Values(7, 8, 20, 20, 2);
+insert into Match_Up Values(8, 6, 20, 20, 2);
 
 
 insert into Player_Score Values(1,1,4,1,0,0,1);
