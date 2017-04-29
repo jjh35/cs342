@@ -15,7 +15,9 @@ Exercise 12.2
 
 Exercise 12.3
 1. Yes, When the server sends the data to the client, it marshalls the code from the relation in the database to JSON format that can be easily
-   sent via http.
+   sent via http.  
 2. Yes, We’ll use J2EE dependency injection to access the container-managed EntityManager (Chapter 6 overview).
 3. The entityManager em is injected in the CPDBResource.java class to create a query.
-4. JPA connects to the database via glashFish's JDBC connection. It translates the relations to JSON. It does joins to find the appropriate fields.
+
+Exerciser 12.4
+1. JPA connects to the database via glashFish's JDBC connection. It translates the relations to JSON. It does joins to find the appropriate fields.
