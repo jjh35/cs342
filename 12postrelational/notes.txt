@@ -7,7 +7,7 @@ Exercise 12.1
 Exercise 12.2
 1. Java created a class for each table we requested. It takes the fields of each class 
    and makes them properties, identifying which one is the primary key via @Id. 
-   It also created a PerteamPK table, which is explained in the next question.
+   It also created a PerteamPK table, which is explained in the next question. 
 2. The PersonteamPK class has a personid and teamname. So one person may be one more than one team (a one to many relationship), so this class
    stores this one to many relationship.
 3. It defaults to properties because it has accessors for others to access the properties.
