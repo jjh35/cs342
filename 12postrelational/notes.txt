@@ -1,0 +1,21 @@
+Exercise 12.1
+1. The connection in guide 12 is done from intellij. So there is a connection made to oracle DBMS from the intelliJ application using JDBC. The glassFish connection is not done from
+   intelliJ. Rather, the glassFish server connects to the DBMS directly. This connection is what will serve up the data using a JDBC connection. When the appliation is running, we only
+   need the glassFish connection.  When we want to do development, then it is useful to have the intelliJ connection.
+
+
+Exercise 12.2
+1. Java created a class for each table we requested. It takes the fields of each class 
+   and makes them properties, identifying which one is the primary key via @Id. 
+   It also created a PerteamPK table, which is explained in the next question.
+2. The PersonteamPK class has a personid and teamname. So one person may be one more than one team (a one to many relationship), so this class
+   stores this one to many relationship.
+3. It defaults to properties because it has accessors for others to access the properties.
+
+
+Exercise 12.3
+1. Yes, When the server sends the data to the client, it marshalls the code from the relation in the database to JSON format that can be easily
+   sent via http.
+2. Yes, We’ll use J2EE dependency injection to access the container-managed EntityManager (Chapter 6 overview).
+3. The entityManager em is injected in the CPDBResource.java class to create a query.
+4. JPA connects to the database via glashFish's JDBC connection. It translates the relations to JSON. It does joins to find the appropriate fields.
