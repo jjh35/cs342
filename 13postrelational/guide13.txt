@@ -1,0 +1,129 @@
+Work through the following materials this week:
+
+Read Pramod Sadalage’s NoSQL Databases: An Overview (circa 2012) and explain:
+
+the key motivations for considering non-relational database systems.
+	Application developers have been frustrated with the impedance mismatch between the relational data structures and the in-memory data 
+	structures of the application. Using NoSQL databases allows developers to develop without having to convert in-memory structures to relational 
+	structures. There is also movement away from using databases as integration points in favor of encapsulating databases with applications
+	and integrating using services.
+
+
+
+aggregate data models.
+	An aggregate is a collection of data that we interact with as a unit. These units of data or aggregates form the boundaries for ACID operations 
+	with the database, Key-value, Document, and Column-family databases can all be seen as forms of aggregate-oriented database.
+
+polyglot persistence.
+	Polyglot Persistence is a fancy term to mean that when storing data, it is best to use multiple data storage technologies, chosen based upon the 
+	way data is being used by individual applications or components of a single application. Different kinds of data are best dealt with different data stores.
+
+the relevance of the CAP theorem.
+	In a distributed system, managing consistency(C), availability(A) and partition toleration(P) is important, Eric Brewer put forth the CAP theorem which 
+	states that in any distributed system we can choose only two of consistency, availability or partition tolerance.
+
+the types of NoSQL databases.
+	Key-Value databases: Key-value stores are the simplest NoSQL data stores to use from an API perspective. The client can either get the value for the key,
+	put a value for a key, or delete a key from the data store. The value is a blob that the data store just stores, without caring or knowing what's inside; 
+	it's the responsibility of the application to understand what was stored. Since key-value stores always use primary-key access, they generally have great 
+	performance and can be easily scaled.
+	
+	Document database: Documents are the main concept in document databases. The database stores and retrieves documents, which can be XML, JSON, BSON, and so 
+	on. These documents are self-describing, hierarchical tree data structures which can consist of maps, collections, and scalar values. 
+	
+	 Column-family databases store data in column families as rows that have many columns associated with a row key (Figure 10.1). Column families are groups 
+	 of related data that is often accessed together. 
+	 
+	 Graph databases allow you to store entities and relationships between these entities. Entities are also known as nodes, which have properties.
+
+when (and when not) to use NoSQL database systems.
+	To use:
+		1. To improve programmer productivity by using a database that better matches an application's needs.
+		2. To improve data access performance via some combination of handling larger data volumes, reducing latency, and improving throughput.
+		
+	When not to use:
+		1. When there are many different entities with complex relations between them. 
+
+An alternate source of this basic information is Martin Fowler’s Introduction to NoSQL video.
+
+Use “Getting Started with the Key/Value API”, Chapters 3–5, from the Oracle NoSQL Database documentation as a reference. Be sure to know how to:
+
+Compare and contrast Major and minor key components.
+	The major key identifies the entity and consists of the leading components of the key. The subsequent components are called minor keys.
+
+Use the appropriate commands to write and retrieve records.
+{
+ "id" : 1,
+ "firstname" : "David",
+ "lastname" "Morrison",
+ "age" : 25,:
+ "income" : 100000,
+ "address" : {"street":"150 Route 2",
+ "city" : "Antioch",
+ "state" : "TN",
+ "phones":[{"type":"home", "areacode" : 423,
+ "number" : 8634379}]
+ },
+ "connections" : [2,3],
+ "properties" : {"height" : "5.5", "weight" : "180"},
+ "expenses" : {"books" : 500, "food" : 1000}
+}
+
+
+SELECT lastName, [$e.address.phones[$element.areaCode = 423].number] AS
+	phoneNumbers FROM Example $e;
+SELECT firstname, lastname, age FROM Example;
+SELECT lastname FROM Example e WHERE e.address.state = "TN";
+
+
+Be sure that you can compare and contrast relational data representations with key-value representations. Note that we will not use these higher-level features: the NoSQL Table API (We’ll focus on the lower-level key/value API); the Avro value schema mechanism (We’ll restrict ourselves to simple string values).
+	
+	A key-value store, or key-value database, is a data storage paradigm designed for storing, retrieving, and managing 
+	associative arrays, a data structure more commonly known today as a dictionary or hash.
+
+This practical article by Re Lai, Enterprise Application Development Using Oracle NoSQL Database, is also helpful. It includes some material that we don't care about (i.e., NetBeans, UML, Avro value-handling) but the following sections are useful for the homework. Skim them now and be prepared to reference them later as needed.
+
+“Represent Key-Value Pairs” — Designing keys
+	Oracle NoSQL Database stores data as key-value pairs. Keys consist of a list of Java Strings, grouping into two parts: major and minor components.
+	A key must have at least one major component. Values, on the other hand, are simply stored as arrays of bytes opaquely. Conversion between bytes 
+	and Java objects is handled by clients.
+“CRUD” — Implementing the standard persistent data operations
+	 // Login modeled as /Login/$userName: $password
+ final String userName = "Jasper";
+ final String password = "welcome";
+
+
+ // Create a login for Jasper
+ List<String> majorPath = Arrays.asList("Login", userName);
+ Key key = Key.createKey(majorPath);
+
+
+ byte[] bytes = password.getBytes();
+ Value value = Value.createValue(bytes);
+
+ kvStore.putIfAbsent(key, value);
+
+
+ // Read 
+ ValueVersion vv2 = kvStore.get(key);
+ Value value2 = vv2.getValue();
+ byte[] bytes2 = value2.getValue();
+ String password2 = new String(bytes);
+
+
+ // Update
+ Value value3 = Value.createValue("welcome3".getBytes());
+ kvStore.put(key, value3);
+ 
+ // Delete
+ kvStore.delete(key)
+“Composite Keys” — Designing multi-element keys
+	Using more than one element as a key
+“Model Entities” — Modeling relational records in a KV store
+	The KV Store stores your data as key-value pairs in collections. 
+“Model Secondary Indexes” — Storing and retrieving sorted data
+	NoSQL databases, including Oracle NoSQL Database, in general do not support secondary indexes. Fortunately it is straightforward to model an index by composite keys
+“Model Multi-values and Relationships” — Modeling foreign key relationships
+	Handling multi-values in Oracle NoSQL Database is not too much different from modeling entities. For simple cases, structured 
+	storage can be used. A collection object can be serialized into a byte array and stored into a single value field. In more fluid scenarios,
+	name-value pairs are preferred. For example, followers of bloggers can be modeled as,
