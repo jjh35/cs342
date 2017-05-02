@@ -33,5 +33,8 @@
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - RESTful Web Service" level="application_server_libraries" />
     <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0" level="application_server_libraries" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - RESTful Web Service" level="application_server_libraries" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - RESTful Web Service" level="application_server_libraries" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 4.1.0 - RESTful Web Service" level="application_server_libraries" />
   </component>
 </module>

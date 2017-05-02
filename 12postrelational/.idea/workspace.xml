@@ -28,42 +28,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Oracle - @localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Oracle - @localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Oracle - @localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PERSON" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -72,21 +36,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <file leaf-file-name="PersonEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="0">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HouseholdEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/HouseholdEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -95,9 +69,11 @@
       <file leaf-file-name="CPDBResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="149">
+              <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,10 +81,10 @@
       <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="136">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,13 +104,16 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response151.json" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/CPDBResource.java" />
         <option value="$PROJECT_DIR$/src/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/models/PersonEntity.java" />
+        <option value="$PROJECT_DIR$/src/CPDBResource.java" />
       </list>
     </option>
   </component>
@@ -146,7 +125,7 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
@@ -182,9 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,8 +169,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="12postrelational" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,14 +225,1280 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="d014cde4-95f9-43d0-8dfb-e727580c68f4" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="models" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:3,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:3,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/10588" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/10588" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/105" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/104" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person104" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:7777,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdp/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:100,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:1000,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4000,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. NW&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. NW&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. NW&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. NW&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Seattle&quot;,&quot;id&quot;:5,&quot;phonenumber&quot;:&quot;300-555-5555&quot;,&quot;state&quot;:&quot;WA&quot;,&quot;street&quot;:&quot;500 Gates St.&quot;,&quot;zipcode&quot;:&quot;90000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. SE&quot;,&quot;zipcode&quot;:&quot;4954&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. SE&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. SE&quot;,&quot;zipcode&quot;:&quot;49&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. SE&quot;,&quot;zipcode&quot;:&quot;49547&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;East Grand Rapids&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-444-4444&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;400 Lake Dr. SE&quot;,&quot;zipcode&quot;:&quot;49546&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jone&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:4,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;19 South Yale ave.&quot;,&quot;zipcode&quot;:&quot;10000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:3,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;19 South Yale ave.&quot;,&quot;zipcode&quot;:&quot;10000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:1,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;19 South Yale ave.&quot;,&quot;zipcode&quot;:&quot;10000&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:1,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;19 South Yale ave.&quot;,&quot;zipcode&quot;:&quot;49799&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:1,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;100 Main St. SE&quot;,&quot;zipcode&quot;:&quot;49799&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:1,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;100 Main St. SE&quot;,&quot;zipcode&quot;:&quot;49999&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:1222,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;100 Main St. SE&quot;,&quot;zipcode&quot;:&quot;49999&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Zeeland&quot;,&quot;id&quot;:2,&quot;phonenumber&quot;:&quot;616-111-1111&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;100 Main St. SE&quot;,&quot;zipcode&quot;:&quot;49999&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;firstname&quot;:&quot;Doug&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;leader&quot;,&quot;householdrole&quot;:&quot;husband&quot;,&quot;id&quot;:4,&quot;lastname&quot;:&quot;Jones&quot;,&quot;membershipstatus&quot;:&quot;m&quot;,&quot;title&quot;:&quot;mr.&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[{&quot;mandate&quot;:&quot;maintain the life of the church&quot;,&quot;name&quot;:&quot;Elders&quot;}],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/people" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/4" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;bob&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;Lukas&quot;,&quot;gender&quot;:&quot;f&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;Lukas&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Lab12_war_exploded/cpdb/person/2" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;houseHold&quot;:{&quot;city&quot;:&quot;Grand Rapids&quot;,&quot;id&quot;:0,&quot;phonenumber&quot;:&quot;616-243-5680&quot;,&quot;state&quot;:&quot;MI&quot;,&quot;street&quot;:&quot;2347 Oxford Dr. SE&quot;,&quot;zipcode&quot;:&quot;49506&quot;},&quot;teams&quot;:[],&quot;birthdate&quot;:&quot;00:00:00-05:00&quot;,&quot;firstname&quot;:&quot;Lukas&quot;,&quot;gender&quot;:&quot;m&quot;,&quot;homegrouprole&quot;:&quot;child&quot;,&quot;householdrole&quot;:&quot;child&quot;,&quot;id&quot;:2,&quot;lastname&quot;:&quot;VanderLinden&quot;,&quot;membershipstatus&quot;:&quot;c&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 4.1.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -434,6 +1721,18 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -642,7 +1941,51 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="GlassFish 4.1.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.0" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="remote" type="GlassfishConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="GlassFish 4.1.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Lab12_war_exploded/" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Lab12:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <data>
+          <option name="adminServerHost" value="" />
+          <option name="clusterName" value="" />
+          <option name="stagingRemotePath" value="" />
+          <option name="transportHostId" value="" />
+          <option name="transportStagingTarget">
+            <TransportTarget>
+              <option name="id" value="32fc0ce1-914b-4cc4-a40a-43c1be626cbb" />
+              <id>32fc0ce1-914b-4cc4-a40a-43c1be626cbb</id>
+            </TransportTarget>
+          </option>
+          <admin-server-host />
+          <cluster-name />
+          <transport-target>
+            <TransportTarget>
+              <option name="id" value="32fc0ce1-914b-4cc4-a40a-43c1be626cbb" />
+              <id>32fc0ce1-914b-4cc4-a40a-43c1be626cbb</id>
+            </TransportTarget>
+          </transport-target>
+          <staging-path />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="GlassFish" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11132" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Lab12:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="GlassFish 4.1.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Lab12_war_exploded" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
@@ -714,12 +2057,16 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="GlassFish Server.GlassFish 4.1.0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="GlassFish Server.remote" />
+      <item index="1" class="java.lang.String" itemvalue="GlassFish Server.GlassFish 4.1.0" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -730,33 +2077,39 @@
       <updated>1493472975275</updated>
       <workItem from="1493472981048" duration="2253000" />
       <workItem from="1493475340435" duration="2259000" />
-      <workItem from="1493478258829" duration="169000" />
+      <workItem from="1493478258829" duration="609000" />
+      <workItem from="1493486623377" duration="6533000" />
+      <workItem from="1493650873363" duration="1518000" />
+      <workItem from="1493679331114" duration="5054000" />
+      <workItem from="1493684431701" duration="2155000" />
+      <workItem from="1493750722111" duration="8337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4681000" />
+    <option name="totallyTimeSpent" value="28718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33550915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34595302" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33550915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5077821" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.51473475" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4922179" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.48526523" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -792,7 +2145,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -800,6 +2161,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -812,7 +2330,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -821,19 +2341,12 @@
         <state relative-caret-position="85">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -846,7 +2359,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,50 +2370,54 @@
         <state relative-caret-position="34">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d014cde4-95f9-43d0-8dfb-e727580c68f4/console.sql" />
     <entry file="dbDummy://dbtable:/9dcf028e/d014cde4-95f9-43d0-8dfb-e727580c68f4/CPDB.PERSON" />
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/PersonEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/HouseholdEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CPDBResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="149">
+          <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,12 +2475,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Lab12</last-edited>
+          <last-edited>Web|Lab12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

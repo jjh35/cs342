@@ -22,8 +22,7 @@ public class PersonEntity {
     public HouseholdEntity houseHold;
     public List<TeamEntity> teams;
 
-
-
+    //@ManyToOne(cascade = CascadeType.PERSIST)
     @ManyToOne
     @JoinColumn(name = "HOUSEHOLDID", referencedColumnName = "ID")
     public HouseholdEntity getHouseHold(){return houseHold;}
@@ -39,6 +38,8 @@ public class PersonEntity {
 
     @Id
     @Column(name = "ID")
+    @GeneratedValue(generator = "cpdbSequence")
+    @SequenceGenerator(name = "cpdbSequence", sequenceName = "cpdb_sequence", allocationSize = 1)
     public long getId() {
         return id;
     }
