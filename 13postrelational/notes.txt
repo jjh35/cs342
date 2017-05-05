@@ -1,0 +1,20 @@
+Exercise 13.1
+	1. The store.put(key,value) stores the key value pair in the database. When storing it for the 
+	   first time, store.put(..) is used. em.persit() creates a new value, but doesn't update values. 
+	   When updating the value in the DB, store.put(...) is used. The 
+	   store.put(...) method directly stores the key/value pair. The em.persist relies on the mapping
+	   between the relation object and the java object. 
+	2. The myHashTale.put() stores a key/value pair in a hashtable table that is in main memory. But the
+	   store.put() stores the key/value pair in the KVLite DB. Both use the key/value mapping.
+	   
+Exercise 13.2
+	1. KVLite keys have a key/value mapping. So one key can map to many different values. This idea is like
+	   a tree. The relational model supports one to many and many to many relationships. One can mimick the
+	   many to many relationship in a key/value mapping DB, but they would have enter each key/value even if
+	   the key is the same.
+	   
+Exercise 13.3
+	a. One would have to store redundant information. If a key maps to multiple objects, then one would 
+	   have to enter the same key and different values multiple times to get a one to many relationship.
+	b. If someone does not know any keys or any informaiton about the DB, then it might be useful to store
+	   some general information in the empty values to help people get started.
