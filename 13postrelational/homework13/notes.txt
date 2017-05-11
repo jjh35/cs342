@@ -1,0 +1,12 @@
+2.
+	a. It is a Key-Value noSQL database
+	b. I would use a key-value database. This system is effiecent for very large data systems. Using this approach,
+		it would be a little cumbersome to impliment alot of one to many or many to many relationshipts, but
+		there are not to many to worry about. Also, I would anticipate alot of queries on this type of database would be
+		for a single field, i.e. the year of a movie, or the first name of an actor. So the key-value system would work well.
+	c. I used the "movieActors/movieID/actor1/-/actorID" key to implement this relationship. Since the value of the actorID is found via a minor key, 
+		then one would have to look up the minor key in order to find out if an actor acted in a movie. So one would have have to look up each value in the
+		movieActors/movieID/actor path. This would not be efficient.
+	d. Instead of a schema, keys are used to organize the databases. For example, I used the movieActors/movieID/actor1/-/actorID key-value
+		to store data for roles. There is no predefined keys that one must use. I can build a new key whenever I want. In a schema based DB,
+		I have to insert into a predefined table. Thus the schema predefines how one can use the DB. This is not the case in a key-value DB.
