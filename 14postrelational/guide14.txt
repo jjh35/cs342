@@ -1,0 +1,32 @@
+Work through the following materials this week:
+
+Read Section 30.1:
+Name and explain the for kinds of control measures required for database security.
+	1. Access Control: the process of creating username's and passwords for for access to a DB.
+	2. Inference control: Stopping unwanted people from querying a statistical DB and infering information from it.
+	3. Flow control: A control measure which prevents information from flowing in such a way that it reaches unauthorized users. 
+	4. Data encryption: Encoding data so it if falls into the wrongs hands, it cannot be deciphered.
+
+Compare and contrast information security and information privacy.
+	1. "Security in information technology refers to many aspects of protecting a system from aunauthorized use, including authentication os users,
+		information encruption, access control, firewall policies, and intrusion detection."
+	2. Privacy is the ability of induviduals ot control the terms under which their personal information is acquired and used."
+
+	So, security prevents unwanted access or loss/damage to existing data while privacy controls the level of exposure of private data.
+
+
+Read Imperva’s Top 5 Database Security Threats.
+	Name and explain the security threats discussed in the article.
+	
+	1. Excessive, inappropriate, or unused privileges. When someone has access to data beyound what is needed for them to perform
+		their role, then they have excessive privileges. They then can access data that may compromise privacy/security.
+	2. Privilege abuse: "users were misusing these privileged service accounts to access sensitive data directly, bypassing the application interface."
+		Thus a person with certain privileges may bypass interfaces/security to access the DB directly.
+	3. INsufficient web application security: Two common types of web application attacks that target databases are SQL Injection and Web Shell. SQL injection is when there is inproper validation
+		and SQL commands entered as data and are run. Web Shell attacks are a stealthy method used to gain unauthorized remote access to a server. Web shells 
+		are backdoors that utilize the web server core functionality (serving remote clients) to gain persistent remote access and obtain full or limited 
+		control over the server through an to the server’s shell
+	4. Weak audit trails: "Here we move into threats caused by insufficient internal processes or gaps. Monitoring data access across the enterprise should be part of any
+		production database deployment. The failure to monitor for both security and compliance anomalies and collect the appropriate audit details of database
+		activity represents a serious organizational risk at many levels."
+	5. Unsecure media storage. When someone access the hardware directly. Sometimes, backed up data may be unsecure.
