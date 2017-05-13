@@ -1,0 +1,563 @@
+<dataSource name="Oracle - @localhost">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="2.6">
+    <schema id="1" name="USER1">
+      <object-id>48</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <visible>1</visible>
+      <introspection-timestamp>2017-05-11.22:00:04</introspection-timestamp>
+    </schema>
+    <schema id="2" name="PUBLIC">
+      <object-id>1</object-id>
+    </schema>
+    <schema id="3" name="SYS" />
+    <schema id="4" name="SYSTEM">
+      <object-id>5</object-id>
+    </schema>
+    <schema id="5" name="OUTLN">
+      <object-id>9</object-id>
+    </schema>
+    <schema id="6" name="DIP">
+      <object-id>14</object-id>
+    </schema>
+    <schema id="7" name="ORACLE_OCM">
+      <object-id>21</object-id>
+    </schema>
+    <schema id="8" name="DBSNMP">
+      <object-id>29</object-id>
+    </schema>
+    <schema id="9" name="APPQOSSYS">
+      <object-id>30</object-id>
+    </schema>
+    <schema id="10" name="CTXSYS">
+      <object-id>32</object-id>
+    </schema>
+    <schema id="11" name="XDB">
+      <object-id>34</object-id>
+    </schema>
+    <schema id="12" name="ANONYMOUS">
+      <object-id>35</object-id>
+    </schema>
+    <schema id="13" name="MDSYS">
+      <object-id>42</object-id>
+    </schema>
+    <schema id="14" name="HR">
+      <object-id>43</object-id>
+    </schema>
+    <schema id="15" name="FLOWS_FILES">
+      <object-id>44</object-id>
+    </schema>
+    <schema id="16" name="APEX_PUBLIC_USER">
+      <object-id>45</object-id>
+    </schema>
+    <schema id="17" name="APEX_040000">
+      <object-id>47</object-id>
+    </schema>
+    <schema id="18" name="XS$NULL">
+      <object-id>2147483638</object-id>
+    </schema>
+    <sequence id="19" parent="1" name="USERTEAM_SEQUENCE">
+      <object-id>20104</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <min-value>1</min-value>
+      <increment-by>1</increment-by>
+      <next-value>120</next-value>
+    </sequence>
+    <table id="20" parent="1" name="FANTASY_LEAGUE">
+      <object-id>20094</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="21" parent="1" name="MATCH_UP">
+      <object-id>20100</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="22" parent="1" name="PLAYER">
+      <object-id>20090</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="23" parent="1" name="PLAYER_SCORE">
+      <object-id>20102</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="24" parent="1" name="POSITION">
+      <object-id>20088</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="25" parent="1" name="PRO_LEAGUE">
+      <object-id>20084</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="26" parent="1" name="PRO_TEAM">
+      <object-id>20086</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="27" parent="1" name="TEAM_PLAYER">
+      <object-id>20098</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="28" parent="1" name="USER_PROFILE">
+      <object-id>20092</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <table id="29" parent="1" name="USER_TEAM">
+      <object-id>20096</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <organization>HEAP</organization>
+    </table>
+    <column id="30" parent="20" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="31" parent="20" name="GAME_COUNT">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="32" parent="20" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="33" parent="20" name="SYS_C007054">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20095</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="34" parent="20" name="SYS_C007054">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007054</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="35" parent="21" name="TEAM1_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="36" parent="21" name="TEAM2_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="37" parent="21" name="TEAM1_SCORE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="38" parent="21" name="TEAM2_SCORE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="39" parent="21" name="WEEK_NUMBER">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="40" parent="21" name="SYS_C007068">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20101</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM1_ID
+TEAM2_ID
+WEEK_NUMBER</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="41" parent="21" name="SYS_C007068">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM1_ID
+TEAM2_ID
+WEEK_NUMBER</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007068</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="42" parent="21" name="SYS_C007069">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM1_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.USER_TEAM.SYS_C007057</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="43" parent="21" name="SYS_C007070">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM2_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.USER_TEAM.SYS_C007057</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="44" parent="22" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="45" parent="22" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="46" parent="22" name="PRO_TEAM">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="47" parent="22" name="POSITION">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <column id="48" parent="22" name="GOALS">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="49" parent="22" name="ASSISTS">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="50" parent="22" name="CLEAN_SHEETS">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="51" parent="22" name="SYS_C007046">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20091</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="52" parent="22" name="SYS_C007046">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007046</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="53" parent="22" name="SYS_C007047">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PRO_TEAM</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.PRO_TEAM.SYS_C007040</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="54" parent="22" name="SYS_C007048">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>POSITION</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.POSITION.SYS_C007042</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="55" parent="23" name="PLAYER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="56" parent="23" name="WEEK">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="57" parent="23" name="SCORE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="58" parent="23" name="PLAYED">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="59" parent="23" name="GOALS">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="60" parent="23" name="ASSISTS">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="61" parent="23" name="CLEAN_SHEET">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="62" parent="23" name="SYS_C007073">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20103</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PLAYER_ID
+WEEK</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="63" parent="23" name="SYS_C007073">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PLAYER_ID
+WEEK</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007073</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="64" parent="23" name="SYS_C007074">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PLAYER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.PLAYER.SYS_C007046</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <check id="65" parent="23" name="PLAYED_CONSTRAINT">
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PLAYED</columns>
+      <predicate>played in (0,1)</predicate>
+    </check>
+    <check id="66" parent="23" name="CLEAN_SHEET_CONSTRAINT">
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>CLEAN_SHEET</columns>
+      <predicate>clean_sheet in (0,1,null)</predicate>
+    </check>
+    <column id="67" parent="24" name="POSITION_NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(16)|0</data-type>
+    </column>
+    <index id="68" parent="24" name="SYS_C007042">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20089</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>POSITION_NAME</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="69" parent="24" name="SYS_C007042">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>POSITION_NAME</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007042</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="70" parent="25" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="71" parent="25" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <index id="72" parent="25" name="SYS_C007038">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20085</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="73" parent="25" name="SYS_C007038">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007038</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="74" parent="26" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="75" parent="26" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="76" parent="26" name="LEAGUE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="77" parent="26" name="SYS_C007040">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20087</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="78" parent="26" name="SYS_C007040">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007040</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="79" parent="26" name="SYS_C007041">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>LEAGUE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.PRO_LEAGUE.SYS_C007038</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="80" parent="27" name="TEAM_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="81" parent="27" name="PLAYER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="82" parent="27" name="SYS_C007062">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20099</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM_ID
+PLAYER_ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="83" parent="27" name="SYS_C007062">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM_ID
+PLAYER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007062</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="84" parent="27" name="SYS_C007063">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>TEAM_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.USER_TEAM.SYS_C007057</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="85" parent="27" name="SYS_C007064">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>PLAYER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.PLAYER.SYS_C007046</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="86" parent="28" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="87" parent="28" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="88" parent="28" name="REFERENCE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <index id="89" parent="28" name="SYS_C007050">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20093</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="90" parent="28" name="SYS_C007050">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007050</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="91" parent="28" name="SYS_C007051">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>REFERENCE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>SYS_C007050</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="92" parent="29" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="93" parent="29" name="NAME">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR2(32)|0</data-type>
+    </column>
+    <column id="94" parent="29" name="USER_ID">
+      <mandatory>1</mandatory>
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="95" parent="29" name="FANTASY_LEAGUE">
+      <data-type>NUMBER(*)|0</data-type>
+    </column>
+    <column id="96" parent="29" name="RECORD">
+      <data-type>VARCHAR2(10)|0</data-type>
+    </column>
+    <index id="97" parent="29" name="SYS_C007057">
+      <name-surrogate>1</name-surrogate>
+      <object-id>20097</object-id>
+      <created-timestamp>2017-05-11.21:57:41</created-timestamp>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <desc-columns />
+      <unique>1</unique>
+      <tablespace-name>SYSTEM</tablespace-name>
+    </index>
+    <key id="98" parent="29" name="SYS_C007057">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <underlying-index>SYS_C007057</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="99" parent="29" name="SYS_C007058">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>USER_ID</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.USER_PROFILE.SYS_C007050</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="100" parent="29" name="SYS_C007059">
+      <name-surrogate>1</name-surrogate>
+      <modified-timestamp>2017-05-11.21:57:41</modified-timestamp>
+      <columns>FANTASY_LEAGUE</columns>
+      <initially-deferred>1</initially-deferred>
+      <ref-key>~.FANTASY_LEAGUE.SYS_C007054</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+  </database-model>
+</dataSource>
