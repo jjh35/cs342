@@ -34,8 +34,10 @@ create or replace procedure findTeamScores(inWeek IN match_up.week_number%type) 
 	p_score integer;
 	team_score integer;
 begin
-	--This procedure updates the match_up scores without querying the match_up table, so we want to lock it to keep other threads from accessing it.
+	--This procedure updates the match_up scores, and we do not want another thread to access the table when it partially completed, so lock the whole table
 	Lock table match_up in row exclusive mode nowait;
+	--We don't want player scores to be changed while we are writing the scores to the math_up table. 
+	Lock table player_score in row exclusive mode nowait;
 	savepoint sp1;
 	team_score := 0;
 	for fantasy_team in (select distinct team1_ID from match_up where week_number = inWeek) loop
@@ -62,9 +64,9 @@ begin
 end;
 /
 
---execute findPlayerScores(1);
---execute findTeamScores(1);
+execute findPlayerScores(1);
+execute findTeamScores(1);
 
 --test queries
---select player_Id as player, score as score, goals as goals, played as played, assists as asssits, clean_sheet as clean_sheet, week as week from player_score where week = 1;
---select distinct team1_score as team1_score, team1_ID as team1_id, team2_score as team2_score, team2_id as team2_id from match_up where week_number = 1;
+select player_Id as player, score as score, goals as goals, played as played, assists as asssits, clean_sheet as clean_sheet, week as week from player_score where week = 1;
+select distinct team1_score as team1_score, team1_ID as team1_id, team2_score as team2_score, team2_id as team2_id from match_up where week_number = 1;
