@@ -1,3 +1,7 @@
+
+--This trigger checks the number of players on a team when a new team_player is inserted. If the number of players on a team is 
+--equal to 11, then no more players should be added (a fantasy team should only have 11 players on it). This cannot be inforced 
+--at the schema level, so this trigger is needed. 
 create or replace trigger teamIntegrity before insert on team_player for each row
 declare
 	numberOnTeam integer;
