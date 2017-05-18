@@ -3,15 +3,8 @@ import oracle.kv.*;
 import java.sql.*;
 import java.util.*;
 
-/**
-     * Answers to questions:
-     * "explain why the information they provide is appropriate for a noSQL solution":
-     *     Since players and player_score table could become very large in a real fantasy soccer league Database,
-     *     a noSQL solution would be faster than a SQL solution.
-     *" evaluate whether or not Oracle's KVLite key-value system is the best type of noSQL database for your application"
-     *      KVLite would work well because the key-value structure works well (would be fast) for many of the queries that
-     *      this system would need to perform.
-     *
+/***
+	*
 	 *	Key structure for each table:
 	 *	The teamsNames table
 	 *   \teamNames\-teamName\teamName\player1Name
@@ -45,7 +38,10 @@ public class LoadDB {
      *                  ...
      *                  \teamNames\-\teamID\teamName\player11Name
      */
-    //get the names of players on a given team, and get the name of the team.
+    /**
+	 * get the names of players on a given team, and get the name of the team.
+	 * throws an SQL Exception if there is an issue with pull the info from the SQL DB
+	*/
     public void loadTeamPlayers() throws SQLException
     {
         KVStore store = KVStoreFactory.getStore(new KVStoreConfig("kvstore", "localhost:5000"));
@@ -127,7 +123,7 @@ public class LoadDB {
      *  /playerScore/-/week/playerID/goals
      *  etc
      *
-     *  loads the playerScores
+     *  loads the playerScores into the key-value DB from the relational database
      * @throws SQLException
      */
     public void loadPlayerScores() throws SQLException {
@@ -264,6 +260,8 @@ public class LoadDB {
      * \player\ID\-\proTeam
      * \player\ID\-\position
      * etc
+	 *
+	 * Load the player relation into the key value structure listed above.
      * @throws SQLException
      */
     public void loadPlayers() throws SQLException {

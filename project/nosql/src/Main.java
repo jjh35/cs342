@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class Main {
     /**
+	 * @author: Jesse Hulse, CS342, jjh35
      * Answers to questions:
      * "explain why the information they provide is appropriate for a noSQL solution":
      *     Since players and player_score table could become very large in a real fantasy soccer league Database,
