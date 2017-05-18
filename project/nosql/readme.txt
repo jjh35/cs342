@@ -24,6 +24,7 @@
      *  	\player\ID\-\position
      *  	etc
 	 *
-	 *This Class implements methods that pull relations from a relational DB and translates them to a key-value kvlite database.
+	 *This noSQl system implements methods that pull relations from a relational DB and translates them to a key-value kvlite database. The key structure 
+	 * above shows how each what relational informatin is saved in the key-value database. 
 	 *
      */
