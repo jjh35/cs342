@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 /**
  * Created by jjh35 on 5/11/2017.
+ * provides the UserProfile object that is mapped from the relational DB
  */
 @Entity
 @Table(name = "USER_PROFILE", schema = "USER1", catalog = "")

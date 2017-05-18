@@ -3,7 +3,8 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by jjh35 on 5/11/2017.
+ * @Created by jjh35 on 5/11/2017.
+ * provides the fantasy_league object that is mapped from the relational DB
  */
 @Entity
 @Table(name = "FANTASY_LEAGUE", schema = "USER1", catalog = "")

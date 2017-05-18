@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 /**
  * Created by jjh35 on 5/11/2017.
+ * provides the PlayerScore object that is mapped from the relational DB
  */
 @Entity
 @Table(name = "PLAYER_SCORE", schema = "USER1", catalog = "")

@@ -13,6 +13,7 @@ import java.util.Map;
 
 
 /**
+*@author Created by  Jesse Hulse(jjh35) on 5/11/2017.
 *This j2ee project implements a restful web service for the fantasy league database. 
 * A user may query for his team, which will return a JSON object with his or her team's name, record, id, each player with their scores for the week, user account info,
 *	and fantasy league information at the path @get "fantasysoccer/team/{id}"

@@ -6,7 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by jjh35 on 5/11/2017.
+ * @Created by jjh35 on 5/11/2017.
+ * provides the Player object that is mapped from the relational DB
  */
 @Entity
 public class Player {

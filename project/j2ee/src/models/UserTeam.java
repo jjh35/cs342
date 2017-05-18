@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * Created by jjh35 on 5/11/2017.
+ * @author Created by  Jesse Hulse(jjh35) on 5/11/2017.
  * This class models the User_team (a user's fantasy team). It also includes (through a many to many relationship) each player on the user team with his scores
  * It includes the user's fantasy leauge info (through a many to one relationship) and the user's account information (through a many to one relationship)
  */

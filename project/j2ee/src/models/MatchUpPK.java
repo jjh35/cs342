@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 /**
  * Created by jjh35 on 5/11/2017.
+ * provides the mathUpPK join object that is mapped from the relational DB
  */
 public class MatchUpPK implements Serializable {
     private long team1Id;

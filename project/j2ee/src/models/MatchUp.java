@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 /**
  * Created by jjh35 on 5/11/2017.
+ *provides the match_up object that is mapped from the relational DB
  */
 @Entity
 @Table(name = "MATCH_UP", schema = "USER1", catalog = "")
