@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * Created by jjh35 on 5/11/2017.
+ * This class models the User_team (a user's fantasy team). It also includes (through a many to many relationship) each player on the user team with his scores
+ * It includes the user's fantasy leauge info (through a many to one relationship) and the user's account information (through a many to one relationship)
  */
 @Entity
 @Table(name = "USER_TEAM", schema = "USER1", catalog = "")
@@ -15,23 +17,21 @@ public class UserTeam {
     private FantasyLeague fantasyLeague;
     private List<Player> players;
     private UserProfile userId;
-    //private transient long leagueID;
 
-//
+	//Get the associated fantasy league information
     @ManyToOne
     @JoinColumn(name = "fantasy_league", referencedColumnName = "ID")
     public FantasyLeague getFantasyLeague(){return fantasyLeague;}
     public void setFantasyLeague(FantasyLeague l) {this.fantasyLeague= l;}
 
+	//get the assocaited user profile information
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "ID")
     public UserProfile getUserProfile(){return userId;}
     public void setUserProfile(UserProfile user) {this.userId = user;}
 
-//    @Transient
-//    public void setLeagueId(long id){ this.leagueID = id;}
-//    public long getLeagueId(){return leagueID;}
 
+	//get all the players on a user team
     @ManyToMany
     @JoinTable(name = "team_player", schema = "USER1",
             joinColumns = @JoinColumn(name = "team_id", referencedColumnName = "ID", nullable = false),
